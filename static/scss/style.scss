@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+html,
+body{
+    scroll-behavior: smooth !important;
+}
+.logo{
+    width:4vw;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/teretana.jpg');
+    background-position: center;
+    background-size: cover;
+    .overlay{
+        width: 100%;
+        height: 100vh;
+        background-color: #252525e5;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding:5% 0 !important;
+        .form{
+            width: 30vw;
+            background-color: #ffffff4b;
+           
+        }
+        @media (max-width:600px) {
+            .form{
+                width: 80vw;
+            }
+        }
+    }
+    .overlayDB{
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: #252525c4;
+      
+        .container{
+            height: 100%;
+            padding:5% 0 !important;
+        }
+    }
+}
+@media (max-width:600px) {
+    .background{
+        display:none !important;
+    }
+}

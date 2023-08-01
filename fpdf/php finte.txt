@@ -1,0 +1,6 @@
+konkretno ovo je SQL LEFT JOIN al nema veze:
+
+SELECT members.name, members.l_name, members.email, members.phone_number,
+members.photo_path,members.training_plans_id,members.trainer_id,members.access_card_pdf_path,
+training_plans.name, training_plans.sessions FROM 
+`members` LEFT JOIN `training_plans` ON members.training_plans_id = training_plans.plan_id;
